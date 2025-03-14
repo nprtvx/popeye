@@ -10,12 +10,17 @@ function Messages() {
   const { user } = useAuth();
 
   useEffect(() => {
+    socket.on('connect_error', (err) => {
+      console.error('Connection error:', err);
+    });
+
     socket.on('message', (message) => {
       setMessages((prevMessages) => [...prevMessages, message]);
     });
 
     return () => {
       socket.off('message');
+      socket.off('connect_error');
     };
   }, []);
 
