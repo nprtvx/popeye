@@ -4,6 +4,8 @@ import io from 'socket.io-client';
 
 const socket = io('http://localhost:4000', {
   transports: ['websocket', 'polling'], // Ensure both transports are enabled
+  reconnectionAttempts: 5, // Retry connection attempts
+  timeout: 20000 // Set a timeout for the connection
 });
 
 function Messages() {
