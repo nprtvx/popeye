@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:4000');
+const socket = io('http://localhost:4000', {
+  transports: ['websocket', 'polling'], // Ensure both transports are enabled
+});
 
 function Messages() {
   const [messages, setMessages] = useState([]);
