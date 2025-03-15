@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header>
-      <h2>Popeye</h2>
+      <h1>popeye</h1>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
