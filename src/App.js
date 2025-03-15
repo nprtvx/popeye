@@ -14,7 +14,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="App">
-          <Header />
+          //<Header />
           <main>
             <Routes> {/* Updated Switch to Routes */}
               <Route exact path="/" element={<HomePage />} /> {/* Updated component to element */}
@@ -24,7 +24,7 @@ function App() {
               {/* Add more routes here */}
             </Routes>
           </main>
-          <Footer />
+          //<Footer />
         </div>
       </Router>
     </AuthProvider>
