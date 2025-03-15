@@ -14,7 +14,8 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="App">
-          //<Header />
+          // // // //
+          // // // //
           <main>
             <Routes> {/* Updated Switch to Routes */}
               <Route exact path="/" element={<HomePage />} /> {/* Updated component to element */}
