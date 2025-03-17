@@ -1,8 +1,0 @@
-server {
-    # ...existing code...
-
-    # Remove or update the Permissions-Policy header
-    add_header Permissions-Policy "interest-cohort=()";
-
-    # ...existing code...
-}
