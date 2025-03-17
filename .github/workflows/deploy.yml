@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v2
         with:
-          python-version: 3.12
+          python-version: 3.8
 
       - name: Install dependencies
         run: |
@@ -24,11 +24,14 @@ jobs:
 
       - name: Generate static files
         run: |
+          export FLASK_SECRET_KEY=${{ secrets.FLASK_SECRET_KEY }}
           python freeze.py
+        if: ${{ success() }}
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Github Pages
+        if: ${{ success() }}
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.REACT_COMM_APP }}
-          publish_dir: ./build
-          commit_message: 'Auto deploy'
+          publis_dir: ./build
+          commit_message: "Auto Deploy"
