@@ -10,27 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '22'
-      
-      - name: Clear npm cache and update socket.io-client
-        run: |
-          npm cache clean --force
-          npm install socket.io-client@latest
-      
-      - name: Install dependencies
-        run: npm install
+          python-version: 3.12
 
-      - name: Build the project
-        run: npm run build
+      - name: Install dependencies
+        run: |
+          pip install Flask Flask-Frozen
+
+      - name: Generate static files
+        run: |
+          python freeze.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.REACT_COMM_APP }}
           publish_dir: ./build
+          commit_message: 'Auto deploy'
