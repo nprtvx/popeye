@@ -13,4 +13,4 @@ def handle_request():
         return jsonify({"message": "This is a POST request", "data": data})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
