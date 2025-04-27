@@ -1,5 +1,7 @@
-"homepage": "https://nprtvx.github.io/popeye",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+{
+  "homepage": "https://nprtvx.github.io/popeye",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
 }
