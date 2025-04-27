@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/popeye/static/js/main.31e3bb5b.js",
+    "main.js": "/popeye/static/js/main.1ce1e375.js",
     "index.html": "/popeye/index.html",
-    "main.31e3bb5b.js.map": "/popeye/static/js/main.31e3bb5b.js.map"
+    "main.1ce1e375.js.map": "/popeye/static/js/main.1ce1e375.js.map"
   },
   "entrypoints": [
-    "static/js/main.31e3bb5b.js"
+    "static/js/main.1ce1e375.js"
   ]
 }
