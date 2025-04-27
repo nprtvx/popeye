@@ -2,7 +2,7 @@
   "name": "popeye",
   "version": "1.0.0",
   "description": "A project in the popeye repository",
-  "homepage": "https://nprtvx.github.io/popeye",
+  "homepage": "https://nprtvx.github.io/popeye/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
