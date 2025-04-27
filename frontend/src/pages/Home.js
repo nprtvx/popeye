@@ -5,7 +5,14 @@ const Home = () => {
   return (
     <div>
       <h1>Welcome to the Home Page</h1>
-      <p>This is the main page of the application.</p>
+      <div>
+        <form>
+          <h2>login</h2>
+          <input type='text/plain' placeholder='username' required/>
+          <input type='password' placeholder='password' required />
+          <button type='submit'>submit</button>
+        </form>
+      </div>
     </div>
   );
 };
