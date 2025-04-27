@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/popeye/static/css/main.14edb700.css",
-    "main.js": "/popeye/static/js/main.98133788.js",
+    "main.js": "/popeye/static/js/main.31e3bb5b.js",
     "index.html": "/popeye/index.html",
-    "main.14edb700.css.map": "/popeye/static/css/main.14edb700.css.map",
-    "main.98133788.js.map": "/popeye/static/js/main.98133788.js.map"
+    "main.31e3bb5b.js.map": "/popeye/static/js/main.31e3bb5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.14edb700.css",
-    "static/js/main.98133788.js"
+    "static/js/main.31e3bb5b.js"
   ]
 }
