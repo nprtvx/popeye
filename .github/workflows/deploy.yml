@@ -21,6 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd frontend
+          npm install read-router-dom
           npm install
 
       - name: Build the app
