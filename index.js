@@ -50,3 +50,6 @@ signuplink.addEventListener('click', () => {
   app.remove(signuplink)
   app.appendChild(signup)
 });
+
+app.appendChild(loginlink);
+app.appendChild(signuplink);
