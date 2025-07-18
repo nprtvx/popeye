@@ -16,3 +16,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+#greeting-card {
+  font-size: 8em;
+  color: #892;
+}
+#login, #sign-up {
+  font-size: 48px;
+}
