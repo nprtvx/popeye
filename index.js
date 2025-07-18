@@ -1,3 +1,5 @@
 // index dot js
 
-document.body.style.backgroundColor = "000d";
+function(){
+  document.body.style.backgroundColor = "000d";
+})();
