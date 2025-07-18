@@ -17,6 +17,9 @@ body {
   justify-content: center;
 }
 #greeting-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 8em;
   color: #892;
 }
