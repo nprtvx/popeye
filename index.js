@@ -1,9 +1,18 @@
 // index dot js
 
+
+document.title = `neon monkey`.toUpperCase();
 const app = document.getElementById('app');
 
-app.addEventListener('load', () => {
-  const appLoaded = true;
+let appLoadStarted;
+
+app.addEventListener('loadstart', () => {
+  const appLoadStarted = true;
 });
 
-console.log(appLoaded);
+console.log(appLoadStarted);
+
+const greeting = document.createElement('div');
+greeting.setAttribute('id', 'greeting-card');
+
+app.appnedChild(greeting);
