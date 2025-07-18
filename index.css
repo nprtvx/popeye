@@ -21,9 +21,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  font-size: 8em;
+  font-size: 2em;
   color: #892;
 }
 #login, #sign-up {
-  font-size: 48px;
+  font-size: 18px;
 }
