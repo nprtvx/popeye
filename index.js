@@ -15,4 +15,4 @@ console.log(appLoadStarted);
 const greeting = document.createElement('div');
 greeting.setAttribute('id', 'greeting-card');
 
-app.appnedChild(greeting);
+app.appendChild(greeting);
