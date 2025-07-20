@@ -59,8 +59,8 @@ const dateelement = document.createElement('div');
 
 let date = new Date();
 
-dateelement.textContent = date
-dateelement.style.display = 'inline-block'
+dateelement.textContent = `${date.getFullYear}  ${date.getMonth}  ${date.getDate}`;
+dateelement.style.display = 'inline-block';
 dateelement.style.fontSize = '26px';
 
 app.append(dateelement);
