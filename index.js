@@ -57,9 +57,12 @@ greeting.appendChild(signuplink);
 
 const dateelement = document.createElement('div');
 
-let date = new Date();
+setInterval(function(){
+  var date = new Date();
+  var format = "YYYY-MMM-DD DDD";
+  dateelement.textContent = dateConvert(date,format);
+}, 1000);
 
-dateelement.textContent = `${date.getFullYear()}  ${date.getMonth()}  ${date.getDate()}`;
 dateelement.style.display = 'inline-block';
 dateelement.style.fontSize = '26px';
 
