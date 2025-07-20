@@ -63,7 +63,7 @@ dateelement.textContent = date
 dateelement.style.display = 'inline-block'
 dateelement.style.fontSize = '26px';
 
-app.append(datelement);
+app.append(dateelement);
 
 
 
