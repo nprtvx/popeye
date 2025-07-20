@@ -54,3 +54,20 @@ signuplink.addEventListener('click', () => {
 greeting.appendChild(loginlink);
 greeting.appendChild(signuplink);
 
+
+const dateelement = document.createElement('div');
+
+let date = new Date();
+
+dateelement.textContent = date
+dateelement.style.display = 'inline-block'
+dateelement.style.fontSize = '26px';
+
+app.append(datelement);
+
+
+
+
+
+
+// eof
